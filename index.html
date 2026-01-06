@@ -15,7 +15,6 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            /* Flex column to ensure footer sticks to bottom */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -32,12 +31,9 @@
 
         /* --- FOOTER STYLES (LIGHT THEME) --- */
         .site-footer {
-            /* CHANGED: Light Grey Background */
-            background-color: #e9ecef;
-            /* CHANGED: Dark Text for readability */
-            color: #343a40;
+            background-color: #e9ecef; /* Light Grey */
+            color: #343a40; /* Dark Text */
             padding-top: 40px;
-            /* Optional: Add a top border to separate from body */
             border-top: 1px solid #dcdcdc; 
         }
 
@@ -66,12 +62,11 @@
             border-bottom: 2px solid #e74c3c; /* Accent color (Red) */
             display: inline-block;
             padding-bottom: 5px;
-            color: #212529; /* Darker heading */
+            color: #212529;
         }
 
         .footer-col p {
             font-size: 14px;
-            /* CHANGED: Medium Dark Grey for paragraph text */
             color: #595959; 
         }
 
@@ -85,7 +80,6 @@
         }
 
         .footer-col ul li a {
-            /* CHANGED: Link color to Dark Grey */
             color: #595959;
             text-decoration: none;
             transition: color 0.3s ease;
@@ -93,7 +87,7 @@
         }
 
         .footer-col ul li a:hover {
-            color: #e74c3c; /* Accent hover color remains Red */
+            color: #e74c3c; 
             padding-left: 5px; 
         }
 
@@ -101,7 +95,6 @@
         .newsletter-form input {
             padding: 10px;
             width: 70%;
-            /* CHANGED: Added border so input is visible on light bg */
             border: 1px solid #ccc; 
             border-radius: 4px 0 0 4px;
             outline: none;
@@ -123,7 +116,6 @@
 
         /* --- COPYRIGHT BAR --- */
         .footer-bottom {
-            /* CHANGED: Slightly darker grey than footer body */
             background-color: #dee2e6;
             padding: 15px 0;
             text-align: center;
@@ -142,8 +134,14 @@
         <div class="footer-container">
             
             <div class="footer-col">
-                <h4>About Us</h4>
-                <p>We are a creative agency dedicated to building clean, accessible, and responsive websites for everyone. Simplicity is our core philosophy.</p>
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form" action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Go</button>
+                </form>
+                <br>
+                <p>Email: info@mywebsite.com</p>
             </div>
 
             <div class="footer-col">
@@ -157,14 +155,8 @@
             </div>
 
             <div class="footer-col">
-                <h4>Stay Connected</h4>
-                <p>Subscribe to our newsletter for updates.</p>
-                <form class="newsletter-form" action="#">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Go</button>
-                </form>
-                <br>
-                <p>Email: info@mywebsite.com</p>
+                <h4>About Us</h4>
+                <p>We are a creative agency dedicated to building clean, accessible, and responsive websites for everyone. Simplicity is our core philosophy.</p>
             </div>
 
         </div>
