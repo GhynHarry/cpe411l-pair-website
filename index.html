@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Footer Template</title>
+    <style>
+        /* --- GENERAL RESET & LAYOUT --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            /* Flex column to ensure footer sticks to bottom */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Kept the light background, change to #ffffff if you want pure white */
+            background-color: #f4f4f4; 
+        }
+
+        /* --- CONTENT PLACEHOLDER --- */
+        main {
+            /* Flex-grow pushes the footer down even with no content */
+            flex: 1; 
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- FOOTER STYLES --- */
+        .site-footer {
+            background-color: #2c3e50; /* Dark Blue-Grey */
+            color: #ecf0f1;
+            padding-top: 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+            justify-content: space-between;
+        }
+
+        /* Footer Columns */
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #e74c3c; /* Accent color line */
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+        /* Footer Links */
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #e74c3c; /* Accent hover color */
+            padding-left: 5px; /* Slight movement on hover */
+        }
+
+        /* Newsletter Input */
+        .newsletter-form input {
+            padding: 10px;
+            width: 70%;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 10px 15px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #c0392b;
+        }
+
+        /* --- COPYRIGHT BAR --- */
+        .footer-bottom {
+            background-color: #1a252f; /* Darker shade */
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>We are a creative agency dedicated to building clean, accessible, and responsive websites for everyone. Simplicity is our core philosophy.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form" action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Go</button>
+                </form>
+                <br>
+                <p>Email: info@mywebsite.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Website Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
