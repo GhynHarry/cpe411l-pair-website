@@ -1,65 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Footer Template</title>
+    <style>
+        /* --- GENERAL RESET & LAYOUT --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-      color: #fff;
-      text-align: center;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4; 
+        }
 
-    .container {
-      max-width: 900px;
-      padding: 30px;
-    }
+        /* --- CONTENT PLACEHOLDER --- */
+        main {
+            flex: 1; 
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+        /* --- FOOTER STYLES (LIGHT THEME) --- */
+        .site-footer {
+            background-color: #e9ecef; /* Light Grey */
+            color: #343a40; /* Dark Text */
+            padding-top: 40px;
+            border-top: 1px solid #dcdcdc; 
+        }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
 
-    .cta-button {
-      display: inline-block;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      background-color: #fff;
-      color: #333;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: transform 0.2s, background-color 0.2s;
-    }
+        /* Footer Columns */
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
 
-    .cta-button:hover {
-      background-color: #f0f0f0;
-      transform: scale(1.05);
-    }
-  </style>
+        .footer-col h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #e74c3c; /* Accent color (Red) */
+            display: inline-block;
+            padding-bottom: 5px;
+            color: #212529;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            color: #595959; 
+        }
+
+        /* Footer Links */
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #595959;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .footer-col ul li a:hover {
+            color: #e74c3c; 
+            padding-left: 5px; 
+        }
+
+        /* Newsletter Input */
+        .newsletter-form input {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc; 
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 10px 15px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #c0392b;
+        }
+
+        /* --- COPYRIGHT BAR --- */
+        .footer-bottom {
+            background-color: #dee2e6;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #495057;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to the HomePage of Mine</h1>
-    <p>We are making the homepage for our Activity.</p>
-    <a href="#" class="cta-button">Get Started</a>
-  </div>
+
+    <main>
+        </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form" action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Go</button>
+                </form>
+                <br>
+                <p>Email: info@mywebsite.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>We are a creative agency dedicated to building clean, accessible, and responsive websites for everyone. Simplicity is our core philosophy.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 My Website Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
